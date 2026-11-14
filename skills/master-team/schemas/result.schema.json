@@ -1,0 +1,95 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Master Team worker result v2",
+  "type": "object",
+  "required": [
+    "task_id",
+    "ticket_id",
+    "attempt_id",
+    "master_generation",
+    "candidate_ref",
+    "status",
+    "summary",
+    "artifacts",
+    "checks",
+    "report_ref"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ticket_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "attempt_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "candidate_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "master_generation": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "status": {
+      "enum": [
+        "done",
+        "error",
+        "blocked",
+        "stopped"
+      ]
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "passed",
+        "failed",
+        "not_run"
+      ],
+      "properties": {
+        "passed": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "failed": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "not_run": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "report_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 2,
+  "protocol_version": "2.0.0",
+  "mode": "manual",
+  "project_root": null,
+  "host_id": null,
+  "platform": "unverified",
+  "active_master_thread_id": null,
+  "previous_master_thread_id": null,
+  "handoff_status": "unbound",
+  "generation": 0,
+  "policy": {
+    "role_profile": "minimal",
+    "master_can_execute": false,
+    "message_budget_bytes": 4096,
+    "hard_message_limit_bytes": null,
+    "max_review_rounds": 3,
+    "wait_slice_seconds": 60
+  },
+  "capabilities": {
+    "independent_sessions": "unverified",
+    "parent_scoped_agents": "unverified",
+    "message": "unverified",
+    "wait": "unverified",
+    "stop": "unverified",
+    "shared_files": "unverified",
+    "transfer_control": "unverified"
+  },
+  "workers": {},
+  "tickets": {},
+  "write_claims": [],
+  "handoff": null
+}

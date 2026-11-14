@@ -1,0 +1,32 @@
+# Publish only Master Team and its supporting repository files.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/skills/
+/skills/*
+!/skills/master-team/
+!/tests/
+!/docs/
+
+# Preserve the existing document's path without publishing other task outputs.
+!/outputs/
+/outputs/*
+!/outputs/master-team-v2-2026-11-14/
+/outputs/master-team-v2-2026-11-14/*
+!/outputs/master-team-v2-2026-11-14/MasterTeam_功能说明_V2.0.docx
+
+# Local runtime state, credentials and generated files never belong in the skill.
+**/__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.pytest_cache/
+~$*.docx
+*.log
+*.zip
+*.png
+*.pdf

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Master 跨平台协作"
+  short_description: "首次使用分步对话教学，按宿主能力配置团队并完成派工、验收和交接"
+  default_prompt: "使用 $master-team；首次使用时请主动分步教我，每次只推进一步；已有进度或团队时接续当前任务。"
